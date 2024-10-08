@@ -141,7 +141,7 @@ namespace Sunfleet
             public string model;
             public string carType;
             public bool isCharged;
-
+            public short velocity;
             public Car(string registrationNumber, string brand, string model, string carType)
             {
                 this.registrationNumber = registrationNumber;
