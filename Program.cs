@@ -17,7 +17,7 @@ namespace Sunfleet
 
                 WriteLine("1. Add car");
                 WriteLine("2. List cars");
-                WriteLine("3. Charge car");
+                WriteLine("3. Charge car");   
                 WriteLine("4. Exit");
 
                 ConsoleKeyInfo keyPressed = ReadKey(true);
@@ -43,6 +43,7 @@ namespace Sunfleet
                         Write("Car type: ");
 
                         string carType = ReadLine();
+                     
 
                         cars[carCounter++] = new Car(registrationNumber, brand, model, carType);
 
@@ -120,6 +121,7 @@ namespace Sunfleet
 
                         break;
 
+
                     case ConsoleKey.D4:
 
                         shouldNotExit = false;
@@ -141,7 +143,7 @@ namespace Sunfleet
             public string model;
             public string carType;
             public bool isCharged;
-            public short velocity;
+
             public Car(string registrationNumber, string brand, string model, string carType)
             {
                 this.registrationNumber = registrationNumber;
@@ -149,6 +151,7 @@ namespace Sunfleet
                 this.model = model;
                 this.carType = carType;
             }
+            
         }
     }
 }
